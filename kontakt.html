@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muzej jugoslovenskog automobila — Kontakt</title>
+<meta name="description" content="Kontaktirajte Muzej jugoslovenskog automobila — zakažite posetu, postavite pitanje o eksponatima ili nas pronađite na mapi u Kragujevcu.">
+<meta name="keywords" content="kontakt muzej automobila, poseta muzeju, Kragujevac, Zastava muzej">
+<meta property="og:title" content="Kontakt — Muzej jugoslovenskog automobila">
+<meta property="og:description" content="Kontaktirajte Muzej jugoslovenskog automobila i zakažite posetu.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="sr_RS">
+<meta property="og:image" content="slike/logo.svg">
+<link rel="icon" type="image/svg+xml" href="slike/logo.svg">
+<link rel="stylesheet" href="css/stil.css">
+<style>
+    .kontakt-mreza { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
+    @media (max-width: 900px) { .kontakt-mreza { grid-template-columns: 1fr; } }
+    .polje-grupa { margin-bottom: 20px; }
+    .polje-grupa label { display: block; font-family: var(--font-n); font-size: 14px; letter-spacing: 0.4px; margin-bottom: 7px; }
+    .polje-grupa input, .polje-grupa select, .polje-grupa textarea {
+        width: 100%; padding: 12px 14px; border-radius: var(--r); border: var(--obrub);
+        background: var(--povrsina); color: var(--tekst); font-family: var(--font-t); font-size: 15.5px;
+        transition: var(--tr);
+    }
+    .polje-grupa input:focus, .polje-grupa select:focus, .polje-grupa textarea:focus {
+        outline: none; border-color: var(--crvena); box-shadow: 0 0 0 3px rgba(171,51,39,0.15);
+    }
+    .polje-greska { border-color: var(--crvena) !important; background: rgba(171,51,39,0.05); }
+    .polje-checkbox { display: flex; align-items: flex-start; gap: 10px; font-size: 14px; color: var(--tekst-sv); }
+    .polje-checkbox input { width: auto; margin-top: 3px; }
+    .forma-poruka { margin-top: 6px; padding: 14px 16px; border-radius: var(--r); font-size: 14.5px; display: none; }
+    .forma-poruka:not(:empty) { display: block; }
+    .forma-poruka ul { padding-left: 18px; }
+    .forma-greska { background: rgba(171,51,39,0.1); border: 1px solid rgba(171,51,39,0.35); color: var(--crvena-t); }
+    .forma-uspeh { background: rgba(60,140,90,0.12); border: 1px solid rgba(60,140,90,0.4); color: #2c7a4b; }
+    .info-kartica { display: flex; gap: 14px; padding: 16px 0; border-bottom: 1px solid rgba(0,0,0,0.08); }
+    .info-kartica:last-child { border-bottom: none; }
+    .info-ikona { font-size: 20px; }
+    .info-kartica h4 { font-size: 15.5px; margin-bottom: 3px; }
+    .info-kartica p { font-size: 14px; color: var(--tekst-sv); }
+    .mapa-omot { border-radius: var(--r-v); overflow: hidden; box-shadow: var(--senka); margin-top: 26px; border: var(--obrub); }
+    .mapa-omot iframe { width: 100%; height: 280px; border: 0; display: block; }
+</style>
+</head>
+<body>
+
+<header class="nav-zaglavlje">
+    <div class="nav-sadrzaj">
+        <a href="pocetna.html" class="nav-brend">
+            <img src="slike/logo.svg" alt="Logo Muzeja jugoslovenskog automobila">
+            <span>Muzej YU auta<small>virtuelna izložba</small></span>
+        </a>
+        <nav>
+            <ul class="nav-lista">
+                <li><a href="pocetna.html" data-prevod="nav-pocetna">Početna</a></li>
+                <li><a href="istorija.html" data-prevod="nav-istorija">Istorija</a></li>
+                <li>
+                    <a href="modeli.html" data-prevod="nav-modeli">Modeli</a>
+                    <ul class="padajuci-meni">
+                        <li><a href="modeli.html#zastava" data-prevod="nav-modeli-zastava">Zastava</a></li>
+                        <li><a href="modeli.html#reno" data-prevod="nav-modeli-reno">Reno</a></li>
+                        <li><a href="modeli.html#folksvagen" data-prevod="nav-modeli-folksvagen">Folksvagen</a></li>
+                        <li><a href="modeli.html#sitroen" data-prevod="nav-modeli-sitroen">Sitroen</a></li>
+                    </ul>
+                </li>
+                <li><a href="kontakt.html" class="aktivan" data-prevod="nav-kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div class="nav-alati">
+            <button class="nav-alat-dugme" data-jezik-dugme="sr" title="Srpski">SR</button>
+            <button class="nav-alat-dugme" data-jezik-dugme="en" title="English">EN</button>
+            <button class="nav-alat-dugme" data-akcija="font-manji" title="Smanji font">A-</button>
+            <button class="nav-alat-dugme" data-akcija="font-veci" title="Povećaj font">A+</button>
+            <button class="nav-alat-dugme" data-akcija="tema" title="Tamna/svetla tema">◐</button>
+            <button class="hamburger" aria-label="Meni"><span></span><span></span><span></span></button>
+        </div>
+    </div>
+</header>
+
+<section class="sekcija" style="padding-top:56px;">
+    <div class="kontejner">
+        <span class="oznaka">Kontakt</span>
+        <h1 style="font-size:clamp(28px,4vw,42px); margin:16px 0 12px;">Posetite ili nam pišite</h1>
+        <p style="max-width:640px; color:var(--tekst-sv); font-size:17px; margin-bottom:48px;">Popunite formu ispod za pitanja o eksponatima, saradnju ili organizovan obilazak grupa i škola.</p>
+
+        <div class="kontakt-mreza">
+            <form id="forma-kontakt" novalidate>
+                <div class="polje-grupa">
+                    <label for="polje-ime">Ime i prezime</label>
+                    <input type="text" id="polje-ime" name="ime" data-prevod-placeholder="" placeholder="Unesite ime i prezime" required minlength="2">
+                </div>
+                <div class="polje-grupa">
+                    <label for="polje-email">E-mail adresa</label>
+                    <input type="email" id="polje-email" name="email" placeholder="ime@primer.com" required>
+                </div>
+                <div class="polje-grupa">
+                    <label for="polje-tema">Tema poruke</label>
+                    <select id="polje-tema" name="tema" required>
+                        <option value="" selected disabled>Izaberite temu</option>
+                        <option value="poseta">Zakazivanje posete</option>
+                        <option value="eksponat">Pitanje o eksponatu</option>
+                        <option value="saradnja">Saradnja / donacija</option>
+                        <option value="ostalo">Ostalo</option>
+                    </select>
+                </div>
+                <div class="polje-grupa">
+                    <label for="polje-poruka">Poruka</label>
+                    <textarea id="polje-poruka" name="poruka" rows="5" placeholder="Napišite poruku (najmanje 10 karaktera)" required minlength="10"></textarea>
+                </div>
+                <div class="polje-grupa polje-checkbox">
+                    <input type="checkbox" id="polje-saglasnost" name="saglasnost">
+                    <label for="polje-saglasnost" style="margin:0;">Saglasan/na sam da se moji podaci koriste isključivo za odgovor na ovu poruku.</label>
+                </div>
+                <button type="submit" class="dugme dugme-puno">Pošalji poruku</button>
+                <div class="forma-poruka" aria-live="polite"></div>
+            </form>
+
+            <aside>
+                <h2 style="font-size:22px; margin-bottom:10px;">Podaci o muzeju</h2>
+                <div class="info-kartica">
+                    <span class="info-ikona">📍</span>
+                    <div><h4>Adresa</h4><p>Ulica Fabrička 1, 34000 Kragujevac, Srbija</p></div>
+                </div>
+                <div class="info-kartica">
+                    <span class="info-ikona">🕘</span>
+                    <div><h4>Radno vreme</h4><p>Utorak–nedelja, 10:00–18:00 (ponedeljkom zatvoreno)</p></div>
+                </div>
+                <div class="info-kartica">
+                    <span class="info-ikona">✉️</span>
+                    <div><h4>E-mail</h4><p>info@muzej-yu-auta.rs</p></div>
+                </div>
+                <div class="info-kartica">
+                    <span class="info-ikona">☎️</span>
+                    <div><h4>Telefon</h4><p>+381 34 000 000</p></div>
+                </div>
+
+                <div class="mapa-omot">
+                    <iframe src="https://maps.google.com/maps?q=Kragujevac%2C%20Srbija&t=&z=13&ie=UTF8&iwloc=&output=embed" title="Lokacija muzeja na Google mapi" loading="lazy"></iframe>
+                </div>
+            </aside>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="kontejner">
+        <div class="footer-mreza">
+            <div>
+                <div class="footer-brend"><img src="slike/logo.svg" alt="Logo muzeja"><span>Muzej YU auta</span></div>
+                <p>Digitalni/virtuelni muzej posvećen automobilskoj industriji SFRJ. Nekomercijalni studentski projekat u okviru predmeta Veb dizajn.</p>
+            </div>
+            <div class="footer-kolona">
+                <h4>Navigacija</h4>
+                <ul><li><a href="pocetna.html">Početna</a></li><li><a href="istorija.html">Istorija</a></li><li><a href="modeli.html">Modeli</a></li><li><a href="kontakt.html">Kontakt</a></li></ul>
+            </div>
+            <div class="footer-kolona">
+                <h4>Marke</h4>
+                <ul><li><a href="modeli.html#zastava">Zastava</a></li><li><a href="modeli.html#reno">Reno</a></li><li><a href="modeli.html#folksvagen">Folksvagen</a></li><li><a href="modeli.html#sitroen">Sitroen</a></li></ul>
+            </div>
+            <div class="footer-kolona">
+                <h4>Kontakt</h4>
+                <ul><li>Ulica Fabrička 1, Kragujevac</li><li>info@muzej-yu-auta.rs</li><li>+381 34 000 000</li></ul>
+            </div>
+        </div>
+        <div class="footer-dno">
+            <span>© 2026 Muzej jugoslovenskog automobila — seminarski rad</span>
+            <span>Sve slike su samostalno izrađene ilustracije</span>
+        </div>
+    </div>
+</footer>
+
+<button class="dugme-na-vrh nav-alat-dugme" style="display:none; position:fixed; bottom:26px; right:26px; z-index:400; border-radius:50%; width:46px; height:46px; background:var(--crvena); color:#fff; border-color:var(--crvena);" aria-label="Skroluj na vrh">↑</button>
+
+<script src="biblioteke/jquery.min.js"></script>
+<script src="js/skripta.js"></script>
+</body>
+</html>

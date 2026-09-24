@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muzej jugoslovenskog automobila — Početna</title>
+<meta name="description" content="Virtuelni muzej jugoslovenskog automobila predstavlja istoriju i modele automobila proizvedenih i sklapanih u SFRJ: Zastava, Reno, Folksvagen i Sitroen.">
+<meta name="keywords" content="Zastava, Fića, Stojadin, Yugo, Jugoslavija, SFRJ, automobili, muzej automobila, Kragujevac, Reno, Folksvagen, Sitroen, Crvena zastava">
+<meta name="author" content="Seminarski rad - Veb dizajn">
+<meta property="og:title" content="Muzej jugoslovenskog automobila">
+<meta property="og:description" content="Virtuelna izložba automobila proizvedenih u SFRJ — Zastava, Reno, Folksvagen i Sitroen.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="sr_RS">
+<meta property="og:image" content="slike/logo.svg">
+<link rel="icon" type="image/svg+xml" href="slike/logo.svg">
+<link rel="stylesheet" href="css/stil.css">
+</head>
+<body>
+
+<header class="nav-zaglavlje">
+    <div class="nav-sadrzaj">
+        <a href="pocetna.html" class="nav-brend">
+            <img src="slike/logo.svg" alt="Logo Muzeja jugoslovenskog automobila">
+            <span>Muzej YU auta<small>virtuelna izložba</small></span>
+        </a>
+
+        <nav>
+            <ul class="nav-lista">
+                <li><a href="pocetna.html" class="aktivan" data-prevod="nav-pocetna">Početna</a></li>
+                <li><a href="istorija.html" data-prevod="nav-istorija">Istorija</a></li>
+                <li>
+                    <a href="modeli.html" data-prevod="nav-modeli">Modeli</a>
+                    <ul class="padajuci-meni">
+                        <li><a href="modeli.html#zastava" data-prevod="nav-modeli-zastava">Zastava</a></li>
+                        <li><a href="modeli.html#reno" data-prevod="nav-modeli-reno">Reno</a></li>
+                        <li><a href="modeli.html#folksvagen" data-prevod="nav-modeli-folksvagen">Folksvagen</a></li>
+                        <li><a href="modeli.html#sitroen" data-prevod="nav-modeli-sitroen">Sitroen</a></li>
+                    </ul>
+                </li>
+                <li><a href="kontakt.html" data-prevod="nav-kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+
+        <div class="nav-alati">
+            <button class="nav-alat-dugme" data-jezik-dugme="sr" title="Srpski">SR</button>
+            <button class="nav-alat-dugme" data-jezik-dugme="en" title="English">EN</button>
+            <button class="nav-alat-dugme" data-akcija="font-manji" title="Smanji font">A-</button>
+            <button class="nav-alat-dugme" data-akcija="font-veci" title="Povećaj font">A+</button>
+            <button class="nav-alat-dugme" data-akcija="tema" title="Tamna/svetla tema">◐</button>
+            <button class="hamburger" aria-label="Meni">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+    </div>
+</header>
+
+<section class="slajder-kontejner" aria-label="Istaknuti sadržaj">
+    <div class="slajder-slika aktivna">
+        <img src="slike/slajder1.jpg" alt="Zastava 101 Stojadin ispred fabričke hale">
+    </div>
+    <div class="slajder-slika">
+        <img src="slike/slajder2.jpg" alt="Yugo Koral na gradskoj ulici">
+    </div>
+    <div class="slajder-slika">
+        <img src="slike/slajder3.jpg" alt="Reno 4 sklapan u fabrici Novo Mesto">
+    </div>
+
+    <div class="slajder-natpis">
+        <span class="oznaka" data-prevod="oznaka-dobrodoslica">Virtuelni muzej</span>
+        <h1 data-prevod="naslov-hero-1">Fabrike koje su pokretale Jugoslaviju</h1>
+        <p data-prevod="tekst-hero-1">Virtuelna izložba automobila koji su vozili jednu državu — od Fiće do Floride.</p>
+        <div class="slajder-dugmici">
+            <a href="modeli.html" class="dugme dugme-puno" data-prevod="dugme-hero-razgledaj">Razgledaj modele</a>
+            <a href="istorija.html" class="dugme dugme-obris" data-prevod="dugme-hero-istorija">Pročitaj istoriju</a>
+        </div>
+    </div>
+
+    <button class="slajder-strelica levo" aria-label="Prethodna slika">&#10094;</button>
+    <button class="slajder-strelica desno" aria-label="Sledeća slika">&#10095;</button>
+    <div class="slajder-indikatori"></div>
+</section>
+
+<section class="sekcija">
+    <div class="kontejner dobrodoslica">
+        <div class="dobrodoslica-slika animiraj">
+            <img src="slike/dobrodoslica.jpg" alt="Ilustracija Zastave 750 Fića ispred fabrike">
+            <div class="dobrodoslica-godina">
+                <strong>1953</strong>
+                <span>OSNIVANJE</span>
+            </div>
+        </div>
+        <div class="dobrodoslica-tekst animiraj">
+            <span class="oznaka" data-prevod="oznaka-dobrodoslica">Dobrodošli</span>
+            <h2 data-prevod="naslov-dobrodoslica">Priča o domaćem automobilu</h2>
+            <p data-prevod="tekst-dobrodoslica-1">Muzej jugoslovenskog automobila čuva i predstavlja nasleđe fabrika Zastava, IMV, TAS i Cimos — mesta gde su nastajali automobili koje je vozila cela jedna generacija.</p>
+            <p data-prevod="tekst-dobrodoslica-2">Kroz stalnu postavku i digitalni katalog možete upoznati istoriju, tehničke karakteristike i priče iza najpoznatijih modela sklapanih u SFRJ.</p>
+            <div class="dobrodoslica-akcije">
+                <a href="istorija.html" class="dugme dugme-obris dugme-obris-tamno" data-prevod="dugme-o-muzeju">Više o muzeju</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="sekcija sekcija-sivo">
+    <div class="kontejner">
+        <div class="sek-glava centar animiraj">
+            <span class="oznaka" data-prevod="oznaka-marke">Katalog</span>
+            <h2 data-prevod="naslov-marke">Marke zastupljene u izložbi</h2>
+            <p class="sek-uvod" data-prevod="tekst-marke">Automobili proizvedeni i sklapani na teritoriji SFRJ, razvrstani po proizvođaču.</p>
+        </div>
+
+        <div class="mreza-marke">
+            <a href="modeli.html#zastava" class="kartica-marka animiraj">
+                <div class="kartica-marka-slika"><img src="slike/zastava-101-stojadin.jpg" alt="Zastava 101 Stojadin"></div>
+                <div class="kartica-marka-telo">
+                    <h3>Zastava</h3>
+                    <p>Kragujevac — Fića, Tristać, 101/Stojadin, Yugo, Florida.</p>
+                    <span class="kartica-marka-link">Pogledaj modele</span>
+                </div>
+            </a>
+            <a href="modeli.html#reno" class="kartica-marka animiraj">
+                <div class="kartica-marka-slika"><img src="slike/reno-4.jpg" alt="Reno 4"></div>
+                <div class="kartica-marka-telo">
+                    <h3>Reno</h3>
+                    <p>IMV Novo Mesto — Renault 4, 5, 12, 16 i 18 za jugoslovensko tržište.</p>
+                    <span class="kartica-marka-link">Pogledaj modele</span>
+                </div>
+            </a>
+            <a href="modeli.html#folksvagen" class="kartica-marka animiraj">
+                <div class="kartica-marka-slika"><img src="slike/folksvagen-golf.jpg" alt="Folksvagen Golf"></div>
+                <div class="kartica-marka-telo">
+                    <h3>Folksvagen</h3>
+                    <p>TAS Sarajevo — sklapanje VW Bube, kasnije i VW Golfa I.</p>
+                    <span class="kartica-marka-link">Pogledaj modele</span>
+                </div>
+            </a>
+            <a href="modeli.html#sitroen" class="kartica-marka animiraj">
+                <div class="kartica-marka-slika"><img src="slike/sitroen-dijana.jpg" alt="Sitroen Dijana"></div>
+                <div class="kartica-marka-telo">
+                    <h3>Sitroen</h3>
+                    <p>Cimos Kopar — Citroën Dyane i 2CV za tržište SFRJ.</p>
+                    <span class="kartica-marka-link">Pogledaj modele</span>
+                </div>
+            </a>
+        </div>
+    </div>
+</section>
+
+<section class="sekcija">
+    <div class="kontejner">
+        <div class="sek-glava centar animiraj">
+            <span class="oznaka">Video</span>
+            <h2>Kratko video predstavljanje muzeja</h2>
+            <p class="sek-uvod">Pregled šest ključnih modela iz stalne postavke, u kratkom video zapisu snimljenom za potrebe ovog projekta.</p>
+        </div>
+        <div class="video-omot animiraj" style="max-width:900px; margin:0 auto;">
+            <video controls preload="metadata" style="width:100%; height:100%; object-fit:cover;" poster="slike/dobrodoslica.svg">
+                <source src="video/predstavljanje-muzeja.mp4" type="video/mp4">
+                Vaš pregledač ne podržava reprodukciju video zapisa.
+            </video>
+        </div>
+    </div>
+</section>
+
+<section class="sekcija sekcija-tamna">
+    <div class="kontejner">
+        <div class="sek-glava centar animiraj">
+            <h2 data-prevod="naslov-statistika">Muzej u brojkama</h2>
+        </div>
+        <div class="mreza-statistika">
+            <div class="animiraj">
+                <div class="stat-broj" data-prevod="stat-1-broj">4</div>
+                <div class="stat-oznaka" data-prevod="stat-1-oznaka">Marke u stalnoj postavci</div>
+            </div>
+            <div class="animiraj">
+                <div class="stat-broj" data-prevod="stat-2-broj">37</div>
+                <div class="stat-oznaka" data-prevod="stat-2-oznaka">Izloženih modela</div>
+            </div>
+            <div class="animiraj">
+                <div class="stat-broj" data-prevod="stat-3-broj">1953–1992</div>
+                <div class="stat-oznaka" data-prevod="stat-3-oznaka">Period proizvodnje</div>
+            </div>
+            <div class="animiraj">
+                <div class="stat-broj" data-prevod="stat-4-broj">4.000.000+</div>
+                <div class="stat-oznaka" data-prevod="stat-4-oznaka">Proizvedenih vozila (Zastava)</div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="baner-poziv">
+    <div class="kontejner">
+        <h2 data-prevod="naslov-poziv">Planirate posetu?</h2>
+        <p data-prevod="tekst-poziv">Zakažite obilazak stalne postavke ili nam pošaljite pitanje o eksponatima.</p>
+        <a href="kontakt.html" class="dugme dugme-puno" data-prevod="dugme-poziv">Kontaktirajte nas</a>
+    </div>
+</section>
+
+<footer>
+    <div class="kontejner">
+        <div class="footer-mreza">
+            <div>
+                <div class="footer-brend">
+                    <img src="slike/logo.svg" alt="Logo muzeja">
+                    <span>Muzej YU auta</span>
+                </div>
+                <p data-prevod="footer-o-nama">Digitalni/virtuelni muzej posvećen automobilskoj industriji SFRJ. Nekomercijalni studentski projekat u okviru predmeta Veb dizajn.</p>
+            </div>
+            <div class="footer-kolona">
+                <h4 data-prevod="footer-navigacija">Navigacija</h4>
+                <ul>
+                    <li><a href="pocetna.html">Početna</a></li>
+                    <li><a href="istorija.html">Istorija</a></li>
+                    <li><a href="modeli.html">Modeli</a></li>
+                    <li><a href="kontakt.html">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="footer-kolona">
+                <h4 data-prevod="footer-marke">Marke</h4>
+                <ul>
+                    <li><a href="modeli.html#zastava">Zastava</a></li>
+                    <li><a href="modeli.html#reno">Reno</a></li>
+                    <li><a href="modeli.html#folksvagen">Folksvagen</a></li>
+                    <li><a href="modeli.html#sitroen">Sitroen</a></li>
+                </ul>
+            </div>
+            <div class="footer-kolona">
+                <h4 data-prevod="footer-kontakt">Kontakt</h4>
+                <ul>
+                    <li>Ulica Fabrička 1, Kragujevac</li>
+                    <li>info@muzej-yu-auta.rs</li>
+                    <li>+381 34 000 000</li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-dno">
+            <span>© 2026 Muzej jugoslovenskog automobila — seminarski rad</span>
+            <span>Sve slike su samostalno izrađene ilustracije</span>
+        </div>
+    </div>
+</footer>
+
+<button class="dugme-na-vrh nav-alat-dugme" style="display:none; position:fixed; bottom:26px; right:26px; z-index:400; border-radius:50%; width:46px; height:46px; background:var(--crvena); color:#fff; border-color:var(--crvena);" aria-label="Skroluj na vrh">↑</button>
+
+<script src="biblioteke/jquery.min.js"></script>
+<script src="js/skripta.js"></script>
+</body>
+</html>

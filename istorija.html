@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muzej jugoslovenskog automobila — Istorija</title>
+<meta name="description" content="Istorija automobilske industrije SFRJ: fabrike Zastava (Kragujevac), IMV (Novo Mesto), TAS (Sarajevo) i Cimos (Kopar) i njihovi najpoznatiji modeli.">
+<meta name="keywords" content="istorija Zastave, SFRJ auto industrija, Crvena zastava, Kragujevac fabrika, IMV Novo Mesto, TAS Sarajevo, Cimos Kopar">
+<meta property="og:title" content="Istorija — Muzej jugoslovenskog automobila">
+<meta property="og:description" content="Istorija automobilske industrije SFRJ: Zastava, IMV, TAS i Cimos.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="sr_RS">
+<meta property="og:image" content="slike/logo.svg">
+<link rel="icon" type="image/svg+xml" href="slike/logo.svg">
+<link rel="stylesheet" href="css/stil.css">
+<style>
+    .vremenska-linija { position: relative; margin-top: 20px; padding-left: 34px; border-left: 3px solid var(--crvena); }
+    .vremenska-stavka { position: relative; padding-bottom: 40px; }
+    .vremenska-stavka:last-child { padding-bottom: 0; }
+    .vremenska-stavka::before {
+        content: ""; position: absolute; left: -43px; top: 4px;
+        width: 16px; height: 16px; border-radius: 50%;
+        background: var(--oker); border: 3px solid var(--pozadina);
+        box-shadow: 0 0 0 3px var(--crvena);
+    }
+    .vremenska-godina { font-family: var(--font-n); color: var(--crvena); font-size: 14px; letter-spacing: 1px; }
+    .vremenska-stavka h3 { margin: 6px 0 8px; font-size: 21px; }
+    .vremenska-stavka p { color: var(--tekst-sv); max-width: 640px; }
+    .napomena-kutija {
+        background: rgba(217,154,61,0.12); border: 1px solid rgba(217,154,61,0.4);
+        border-left: 4px solid var(--oker); border-radius: var(--r); padding: 20px 24px; margin-top: 46px;
+    }
+    .napomena-kutija h4 { font-size: 16px; margin-bottom: 8px; }
+    .napomena-kutija p { color: var(--tekst-sv); font-size: 15px; }
+    .dvokolona { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
+    @media (max-width: 900px) { .dvokolona { grid-template-columns: 1fr; } }
+    .dokument-kartica {
+        display: flex; align-items: center; gap: 16px; background: var(--povrsina);
+        border: var(--obrub); border-radius: var(--r); padding: 18px 22px; margin-top: 22px; box-shadow: var(--senka);
+    }
+    .dokument-ikona { font-size: 28px; color: var(--crvena); }
+    .dokument-kartica div h4 { font-size: 16px; margin-bottom: 3px; }
+    .dokument-kartica div p { font-size: 13.5px; color: var(--tekst-sv); }
+    .dokument-kartica { text-decoration: none; color: inherit; transition: var(--tr); }
+    .dokument-kartica:hover { transform: translateY(-3px); box-shadow: var(--senka-j); }
+</style>
+</head>
+<body>
+
+<header class="nav-zaglavlje">
+    <div class="nav-sadrzaj">
+        <a href="pocetna.html" class="nav-brend">
+            <img src="slike/logo.svg" alt="Logo Muzeja jugoslovenskog automobila">
+            <span>Muzej YU auta<small>virtuelna izložba</small></span>
+        </a>
+        <nav>
+            <ul class="nav-lista">
+                <li><a href="pocetna.html" data-prevod="nav-pocetna">Početna</a></li>
+                <li><a href="istorija.html" class="aktivan" data-prevod="nav-istorija">Istorija</a></li>
+                <li>
+                    <a href="modeli.html" data-prevod="nav-modeli">Modeli</a>
+                    <ul class="padajuci-meni">
+                        <li><a href="modeli.html#zastava" data-prevod="nav-modeli-zastava">Zastava</a></li>
+                        <li><a href="modeli.html#reno" data-prevod="nav-modeli-reno">Reno</a></li>
+                        <li><a href="modeli.html#folksvagen" data-prevod="nav-modeli-folksvagen">Folksvagen</a></li>
+                        <li><a href="modeli.html#sitroen" data-prevod="nav-modeli-sitroen">Sitroen</a></li>
+                    </ul>
+                </li>
+                <li><a href="kontakt.html" data-prevod="nav-kontakt">Kontakt</a></li>
+            </ul>
+        </nav>
+        <div class="nav-alati">
+            <button class="nav-alat-dugme" data-jezik-dugme="sr" title="Srpski">SR</button>
+            <button class="nav-alat-dugme" data-jezik-dugme="en" title="English">EN</button>
+            <button class="nav-alat-dugme" data-akcija="font-manji" title="Smanji font">A-</button>
+            <button class="nav-alat-dugme" data-akcija="font-veci" title="Povećaj font">A+</button>
+            <button class="nav-alat-dugme" data-akcija="tema" title="Tamna/svetla tema">◐</button>
+            <button class="hamburger" aria-label="Meni"><span></span><span></span><span></span></button>
+        </div>
+    </div>
+</header>
+
+<section class="sekcija" style="padding-top:56px;">
+    <div class="kontejner">
+        <span class="oznaka">Istorija</span>
+        <h1 style="font-size:clamp(30px,4vw,46px); margin:16px 0 18px; max-width:760px;">Kako su fabrike u Kragujevcu, Sarajevu, Novom Mestu i Kopru pokretale jednu državu</h1>
+        <p style="max-width:760px; color:var(--tekst-sv); font-size:17.5px;">Jugoslovenska automobilska industrija je, u periodu od 1953. do raspada SFRJ 1992. godine, izrasla u jednu od tehnološki najrazvijenijih grana privrede — sa fabrikom u Kragujevcu kao nosiocem i tri pridružene fabrike koje su, po stranim licencama, sklapale automobile za jugoslovensko tržište.</p>
+
+        <div class="dvokolona" style="margin-top:56px;">
+            <div>
+                <h2 style="font-size:26px; margin-bottom:18px;">Vremenska linija</h2>
+                <div class="vremenska-linija">
+                    <div class="vremenska-stavka animiraj">
+                        <div class="vremenska-godina">1953–1955</div>
+                        <h3>Osnivanje i prvi koraci — Zastava</h3>
+                        <p>U kragujevačkom Vojnotehničkom zavodu počinje sklapanje džipa Willys, a već 1955. sa traka silazi prva Zastava 750 — Fića, po licenci FIAT-a 600.</p>
+                    </div>
+                    <div class="vremenska-stavka animiraj">
+                        <div class="vremenska-godina">1971</div>
+                        <h3>Zastava 101 — Stojadin</h3>
+                        <p>Prvi jugoslovenski automobil srednje klase razvijen na bazi FIAT-a 128, sa karakterističnim petim vratima — rešenje koje FIAT tada nije izvozio na zapadna tržišta.</p>
+                    </div>
+                    <div class="vremenska-stavka animiraj">
+                        <div class="vremenska-godina">1960-e–1980-e</div>
+                        <h3>Reno u Novom Mestu (IMV)</h3>
+                        <p>Slovenačka fabrika IMV sklapa Renault 4, 5, 12, 16 i 18 za tržište SFRJ, čineći Novo Mesto drugim najvećim centrom auto-industrije u zemlji.</p>
+                    </div>
+                    <div class="vremenska-stavka animiraj">
+                        <div class="vremenska-godina">1970-e–1980-e</div>
+                        <h3>TAS Sarajevo i Cimos Kopar</h3>
+                        <p>Tvornica automobila Sarajevo (TAS) sklapa Volkswagen Golf, dok slovenački Cimos u Kopru proizvodi delove i sklapa Citroën Dyane i 2CV.</p>
+                    </div>
+                    <div class="vremenska-stavka animiraj">
+                        <div class="vremenska-godina">1980–1988</div>
+                        <h3>Yugo i Yugo Florida</h3>
+                        <p>Prvi potpuno samostalno razvijen jugoslovenski automobil, Yugo 45, izlazi 1980. Prati ga izvozni pohod na tržište SAD, a 1988. i model Florida, dizajniran u Italdesignu.</p>
+                    </div>
+                    <div class="vremenska-stavka animiraj">
+                        <div class="vremenska-godina">1992</div>
+                        <h3>Raspad SFRJ</h3>
+                        <p>Sankcije i raspad zajedničkog tržišta prekidaju kooperantske lance između republika i označavaju kraj jedinstvene jugoslovenske auto-industrije onakve kakva je postojala do tada.</p>
+                    </div>
+                </div>
+
+                <div class="napomena-kutija animiraj">
+                    <h4>📌 Istorijska napomena: Opel</h4>
+                    <p>Sklapanje Opela (model Astra) u kragujevačkoj fabrici počelo je tek <strong>1999. godine</strong>, u okviru saradnje sa General Motors-om — dakle, nakon raspada SFRJ (1992). Zbog toga Opel nije uvršten u stalnu postavku muzeja, koja obuhvata isključivo period 1953–1992.</p>
+                </div>
+
+                <a href="dokumenti/brosura-muzeja.pdf" class="dokument-kartica" download>
+                    <span class="dokument-ikona">📄</span>
+                    <div>
+                        <h4>Preuzmite brošuru muzeja (PDF)</h4>
+                        <p>Kratak pregled istorije i eksponata — brosura-muzeja.pdf</p>
+                    </div>
+                </a>
+            </div>
+
+            <div>
+                <h2 style="font-size:26px; margin-bottom:18px;">Video prilog</h2>
+                <div class="video-omot animiraj">
+                    <iframe src="https://www.youtube.com/embed/7SuKLShsSkU" title="Prilog o automobilu Yugo u međunarodnim motorističkim emisijama" loading="lazy" allowfullscreen></iframe>
+                </div>
+                <p style="color:var(--tekst-sv); font-size:14.5px; margin-top:10px;">Arhivski TV prilog u kome se, između ostalog, testira i jugoslovenski Yugo — ilustracija međunarodne prepoznatljivosti domaćeg automobila.</p>
+
+                <h2 style="font-size:22px; margin:40px 0 16px;">Galerija modela</h2>
+                <div style="display:grid; grid-template-columns:1fr 1fr; gap:14px;">
+                    <img class="animiraj" src="slike/zastava-750-fica.jpg" alt="Zastava 750 Fića" style="background:var(--pozad-sek); border-radius:var(--r-v); padding:10px; border:var(--obrub);">
+                    <img class="animiraj" src="slike/yugo-koral.jpg" alt="Yugo Koral" style="background:var(--pozad-sek); border-radius:var(--r-v); padding:10px; border:var(--obrub);">
+                    <img class="animiraj" src="slike/folksvagen-golf-tas.jpg" alt="Folksvagen Golf sklapan u TAS Sarajevo" style="background:var(--pozad-sek); border-radius:var(--r-v); padding:10px; border:var(--obrub);">
+                    <img class="animiraj" src="slike/sitroen-dijana-cimos.jpg" alt="Sitroen Dijana iz fabrike Cimos" style="background:var(--pozad-sek); border-radius:var(--r-v); padding:10px; border:var(--obrub);">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="baner-poziv">
+    <div class="kontejner">
+        <h2>Zanima vas tehnika iza modela?</h2>
+        <p>Pogledajte kompletan katalog sa specifikacijama, razvrstan po markama.</p>
+        <a href="modeli.html" class="dugme dugme-puno">Otvori katalog modela</a>
+    </div>
+</section>
+
+<footer>
+    <div class="kontejner">
+        <div class="footer-mreza">
+            <div>
+                <div class="footer-brend"><img src="slike/logo.svg" alt="Logo muzeja"><span>Muzej YU auta</span></div>
+                <p>Digitalni/virtuelni muzej posvećen automobilskoj industriji SFRJ. Nekomercijalni studentski projekat u okviru predmeta Veb dizajn.</p>
+            </div>
+            <div class="footer-kolona">
+                <h4>Navigacija</h4>
+                <ul><li><a href="pocetna.html">Početna</a></li><li><a href="istorija.html">Istorija</a></li><li><a href="modeli.html">Modeli</a></li><li><a href="kontakt.html">Kontakt</a></li></ul>
+            </div>
+            <div class="footer-kolona">
+                <h4>Marke</h4>
+                <ul><li><a href="modeli.html#zastava">Zastava</a></li><li><a href="modeli.html#reno">Reno</a></li><li><a href="modeli.html#folksvagen">Folksvagen</a></li><li><a href="modeli.html#sitroen">Sitroen</a></li></ul>
+            </div>
+            <div class="footer-kolona">
+                <h4>Kontakt</h4>
+                <ul><li>Ulica Fabrička 1, Kragujevac</li><li>info@muzej-yu-auta.rs</li><li>+381 34 000 000</li></ul>
+            </div>
+        </div>
+        <div class="footer-dno">
+            <span>© 2026 Muzej jugoslovenskog automobila — seminarski rad</span>
+            <span>Sve slike su samostalno izrađene ilustracije</span>
+        </div>
+    </div>
+</footer>
+
+<button class="dugme-na-vrh nav-alat-dugme" style="display:none; position:fixed; bottom:26px; right:26px; z-index:400; border-radius:50%; width:46px; height:46px; background:var(--crvena); color:#fff; border-color:var(--crvena);" aria-label="Skroluj na vrh">↑</button>
+
+<script src="biblioteke/jquery.min.js"></script>
+<script src="js/skripta.js"></script>
+</body>
+</html>

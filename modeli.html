@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Muzej jugoslovenskog automobila — Katalog modela</title>
+<meta name="description" content="Katalog automobila proizvedenih u SFRJ razvrstan po markama: Zastava, Reno, Folksvagen i Sitroen — tehničke karakteristike i godine proizvodnje.">
+<meta name="keywords" content="katalog automobila SFRJ, Zastava modeli, Reno IMV, Folksvagen TAS Sarajevo, Sitroen Cimos">
+<meta property="og:title" content="Katalog modela — Muzej jugoslovenskog automobila">
+<meta property="og:description" content="Katalog automobila iz SFRJ razvrstan po markama sa tehničkim podacima.">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="sr_RS">
+<meta property="og:image" content="slike/logo.svg">
+<link rel="icon" type="image/svg+xml" href="slike/logo.svg">
+
+<link rel="stylesheet" href="biblioteke/bootstrap.min.css">
+<link rel="stylesheet" href="css/stil.css">
+<style>
+    body { font-family: var(--font-t); }
+    h1,h2,h3,h4,h5, .navbar-brand { font-family: var(--font-n); }
+    .bg-muzej { background-color: var(--plava-tamna) !important; }
+    .text-muzej-oker { color: var(--oker) !important; }
+    .btn-muzej { background-color: var(--crvena); border-color: var(--crvena); color:#fff; }
+    .btn-muzej:hover { background-color: var(--crvena-t); border-color: var(--crvena-t); color:#fff; }
+    .nav-tabs .nav-link.active { border-color: var(--crvena) var(--crvena) #fff; color: var(--crvena); font-weight:600; }
+    .nav-tabs .nav-link { color: var(--tekst); }
+    .card-img-top { background-color: var(--krem); padding: 1.5rem; }
+    .accordion-button:not(.collapsed) { background-color: rgba(171,51,39,0.08); color: var(--crvena-t); }
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-muzej sticky-top border-bottom border-3" style="border-color:var(--crvena) !important;">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="pocetna.html">
+            <img src="slike/logo.svg" alt="Logo muzeja" width="38" height="38">
+            <span>Muzej YU auta</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#glavniMeni" aria-controls="glavniMeni" aria-expanded="false" aria-label="Otvori meni">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="glavniMeni">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                <li class="nav-item"><a class="nav-link" href="pocetna.html">Početna</a></li>
+                <li class="nav-item"><a class="nav-link" href="istorija.html">Istorija</a></li>
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="modeli.html">Modeli</a></li>
+                <li class="nav-item"><a class="nav-link" href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="bg-muzej text-white py-5">
+    <div class="container py-4">
+        <span class="badge rounded-pill text-muzej-oker border border-warning-subtle px-3 py-2 mb-3">Katalog</span>
+        <h1 class="display-5 fw-bold">Modeli po markama</h1>
+        <p class="lead col-lg-8 text-white-50">Pregledajte automobile proizvedene i sklapane u SFRJ, organizovane po proizvođaču — sa osnovnim tehničkim podacima za svaki model.</p>
+    </div>
+</div>
+
+<div class="container py-5">
+
+    
+    <ul class="nav nav-tabs nav-fill mb-4" id="markeTabovi" role="tablist">
+        <li class="nav-item" role="presentation">
+            <button class="nav-link active" id="zastava-tab" data-bs-toggle="tab" data-bs-target="#zastava" type="button" role="tab">Zastava</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="reno-tab" data-bs-toggle="tab" data-bs-target="#reno" type="button" role="tab">Reno</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="folksvagen-tab" data-bs-toggle="tab" data-bs-target="#folksvagen" type="button" role="tab">Folksvagen</button>
+        </li>
+        <li class="nav-item" role="presentation">
+            <button class="nav-link" id="sitroen-tab" data-bs-toggle="tab" data-bs-target="#sitroen" type="button" role="tab">Sitroen</button>
+        </li>
+    </ul>
+
+    <div class="tab-content" id="markeTaboviSadrzaj">
+
+        
+        <div class="tab-pane fade show active" id="zastava" role="tabpanel">
+            <div class="d-flex align-items-center justify-content-between flex-wrap mb-4">
+                <div>
+                    <h2 class="h3 mb-1">Zastava</h2>
+                    <p class="text-muted mb-0">Fabrika u Kragujevcu · proizvodnja po licenci FIAT-a od 1953. do 2008.</p>
+                </div>
+                <span class="badge bg-danger fs-6">4.000.000+ vozila</span>
+            </div>
+
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="slike/zastava-750-fica.jpg" class="card-img-top" alt="Zastava 750 Fića">
+                        <div class="card-body">
+                            <h5 class="card-title">Zastava 750 „Fića“</h5>
+                            <p class="card-text text-muted small">Prvi masovni jugoslovenski automobil, po licenci FIAT-a 600.</p>
+                            <ul class="list-group list-group-flush small">
+                                <li class="list-group-item px-0"><strong>Proizvodnja:</strong> 1955–1985</li>
+                                <li class="list-group-item px-0"><strong>Motor:</strong> 0.6–0.85 L</li>
+                                <li class="list-group-item px-0"><strong>Komada:</strong> ≈ 923.000</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="slike/zastava-101-stojadin.jpg" class="card-img-top" alt="Zastava 101 Stojadin">
+                        <div class="card-body">
+                            <h5 class="card-title">Zastava 101 „Stojadin“</h5>
+                            <p class="card-text text-muted small">Prvi automobil srednje klase razvijen u Jugoslaviji, na bazi FIAT-a 128.</p>
+                            <ul class="list-group list-group-flush small">
+                                <li class="list-group-item px-0"><strong>Proizvodnja:</strong> 1971–2008</li>
+                                <li class="list-group-item px-0"><strong>Motor:</strong> 1.1–1.3 L</li>
+                                <li class="list-group-item px-0"><strong>Karoserija:</strong> Hečbek, 5 vrata</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="slike/yugo-koral.jpg" class="card-img-top" alt="Yugo Koral">
+                        <div class="card-body">
+                            <h5 class="card-title">Yugo 45 / Koral</h5>
+                            <p class="card-text text-muted small">Prvi potpuno samostalno razvijen model, poznat i po izvozu u SAD.</p>
+                            <ul class="list-group list-group-flush small">
+                                <li class="list-group-item px-0"><strong>Proizvodnja:</strong> 1980–2008</li>
+                                <li class="list-group-item px-0"><strong>Motor:</strong> 0.9–1.1 L</li>
+                                <li class="list-group-item px-0"><strong>Izvoz:</strong> SAD (od 1985)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-3">
+                    <div class="card h-100 shadow-sm">
+                        <img src="slike/yugo-florida.jpg" class="card-img-top" alt="Yugo Florida">
+                        <div class="card-body">
+                            <h5 class="card-title">Yugo Florida</h5>
+                            <p class="card-text text-muted small">Model više klase dizajniran u Italdesignu (Đorđeto Đuđaro).</p>
+                            <ul class="list-group list-group-flush small">
+                                <li class="list-group-item px-0"><strong>Proizvodnja:</strong> 1988–2008</li>
+                                <li class="list-group-item px-0"><strong>Motor:</strong> 1.1–1.6 L</li>
+                                <li class="list-group-item px-0"><strong>Dizajner:</strong> Italdesign</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="tab-pane fade" id="reno" role="tabpanel">
+            <div class="d-flex align-items-center justify-content-between flex-wrap mb-4">
+                <div>
+                    <h2 class="h3 mb-1">Reno (Renault)</h2>
+                    <p class="text-muted mb-0">IMV — Industrija motornih vozila, Novo Mesto (Slovenija)</p>
+                </div>
+                <span class="badge bg-primary fs-6">Licenca: Renault (FR)</span>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="slike/reno-4.jpg" class="card-img-top" alt="Reno 4">
+                        <div class="card-body">
+                            <h5 class="card-title">Reno 4 (Renault 4)</h5>
+                            <p class="card-text text-muted small">Praktično univerzalno vozilo, sklapano za jugoslovensko tržište.</p>
+                            <ul class="list-group list-group-flush small">
+                                <li class="list-group-item px-0"><strong>Karoserija:</strong> Karavan/hečbek</li>
+                                <li class="list-group-item px-0"><strong>Motor:</strong> 0.8–1.1 L</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="slike/reno-5.jpg" class="card-img-top" alt="Reno 5">
+                        <div class="card-body">
+                            <h5 class="card-title">Reno 5 (Renault 5)</h5>
+                            <p class="card-text text-muted small">Popularni mali hečbek, jedan od najprodavanijih Renoa u regionu.</p>
+                            <ul class="list-group list-group-flush small">
+                                <li class="list-group-item px-0"><strong>Karoserija:</strong> Hečbek</li>
+                                <li class="list-group-item px-0"><strong>Motor:</strong> 0.8–1.4 L</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="slike/reno-16.jpg" class="card-img-top" alt="Reno 16">
+                        <div class="card-body">
+                            <h5 class="card-title">Reno 16 / 18</h5>
+                            <p class="card-text text-muted small">Modeli više klase, sklapani u manjim serijama za domaće tržište.</p>
+                            <ul class="list-group list-group-flush small">
+                                <li class="list-group-item px-0"><strong>Karoserija:</strong> Limuzina/hečbek</li>
+                                <li class="list-group-item px-0"><strong>Motor:</strong> 1.3–1.6 L</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="tab-pane fade" id="folksvagen" role="tabpanel">
+            <div class="d-flex align-items-center justify-content-between flex-wrap mb-4">
+                <div>
+                    <h2 class="h3 mb-1">Folksvagen (Volkswagen)</h2>
+                    <p class="text-muted mb-0">TAS — Tvornica automobila Sarajevo (BiH)</p>
+                </div>
+                <span class="badge bg-secondary fs-6">Licenca: Volkswagen (DE)</span>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="slike/folksvagen-buba.jpg" class="card-img-top" alt="Folksvagen Buba">
+                        <div class="card-body">
+                            <h5 class="card-title">Folksvagen Buba</h5>
+                            <p class="card-text text-muted small">Rane probne serije sklapane u Sarajevu pre uvođenja Golfa.</p>
+                            <ul class="list-group list-group-flush small">
+                                <li class="list-group-item px-0"><strong>Karoserija:</strong> Limuzina, 2 vrata</li>
+                                <li class="list-group-item px-0"><strong>Motor:</strong> 1.2–1.6 L (bokser)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="slike/folksvagen-golf.jpg" class="card-img-top" alt="Folksvagen Golf">
+                        <div class="card-body">
+                            <h5 class="card-title">Folksvagen Golf I</h5>
+                            <p class="card-text text-muted small">Sklapan u TAS-u za jugoslovensko tržište krajem 1970-ih i 1980-ih.</p>
+                            <ul class="list-group list-group-flush small">
+                                <li class="list-group-item px-0"><strong>Karoserija:</strong> Hečbek, 3/5 vrata</li>
+                                <li class="list-group-item px-0"><strong>Motor:</strong> 1.1–1.6 L</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+        <div class="tab-pane fade" id="sitroen" role="tabpanel">
+            <div class="d-flex align-items-center justify-content-between flex-wrap mb-4">
+                <div>
+                    <h2 class="h3 mb-1">Sitroen (Citroën)</h2>
+                    <p class="text-muted mb-0">Cimos — Kopar (Slovenija)</p>
+                </div>
+                <span class="badge bg-warning text-dark fs-6">Licenca: Citroën (FR)</span>
+            </div>
+            <div class="row g-4">
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="slike/sitroen-dijana.jpg" class="card-img-top" alt="Sitroen Dijana">
+                        <div class="card-body">
+                            <h5 class="card-title">Sitroen Dijana (Dyane)</h5>
+                            <p class="card-text text-muted small">Jednostavno i ekonomično vozilo, sklapano u manjim serijama.</p>
+                            <ul class="list-group list-group-flush small">
+                                <li class="list-group-item px-0"><strong>Karoserija:</strong> Karavan/limuzina</li>
+                                <li class="list-group-item px-0"><strong>Motor:</strong> 0.6–0.7 L (bokser)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="slike/sitroen-2cv.jpg" class="card-img-top" alt="Sitroen 2CV">
+                        <div class="card-body">
+                            <h5 class="card-title">Sitroen 2CV</h5>
+                            <p class="card-text text-muted small">Legendarni model, u ograničenom broju sklapan i za domaće tržište.</p>
+                            <ul class="list-group list-group-flush small">
+                                <li class="list-group-item px-0"><strong>Karoserija:</strong> Limuzina, 2 vrata</li>
+                                <li class="list-group-item px-0"><strong>Motor:</strong> 0.375–0.6 L</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    
+    <div class="mt-5 pt-3">
+        <h2 class="h3 mb-4">Često postavljana pitanja o postavci</h2>
+        <div class="accordion" id="cestaPitanja">
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#pitanje1">
+                        Da li su svi izloženi automobili originalni?
+                    </button>
+                </h3>
+                <div id="pitanje1" class="accordion-collapse collapse show" data-bs-parent="#cestaPitanja">
+                    <div class="accordion-body text-muted">Postavka kombinuje restaurirane originalne primerke i verne replike, u zavisnosti od dostupnosti i stanja pojedinog modela.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pitanje2">
+                        Zašto Opel nije deo stalne postavke?
+                    </button>
+                </h3>
+                <div id="pitanje2" class="accordion-collapse collapse" data-bs-parent="#cestaPitanja">
+                    <div class="accordion-body text-muted">Sklapanje Opela u Kragujevcu počelo je 1999. godine, posle raspada SFRJ, pa izlazi iz vremenskog okvira stalne postavke (1953–1992). Više o tome pročitajte na stranici Istorija.</div>
+                </div>
+            </div>
+            <div class="accordion-item">
+                <h3 class="accordion-header">
+                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#pitanje3">
+                        Da li se organizuju grupne posete i školske ekskurzije?
+                    </button>
+                </h3>
+                <div id="pitanje3" class="accordion-collapse collapse" data-bs-parent="#cestaPitanja">
+                    <div class="accordion-body text-muted">Da, grupne posete se zakazuju unapred preko kontakt forme, uz naznaku broja posetilaca i željenog termina.</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="text-center mt-5">
+        <a href="kontakt.html" class="btn btn-muzej btn-lg px-4">Zakažite obilazak</a>
+    </div>
+</div>
+
+<footer class="bg-dark text-light pt-5 pb-3 mt-5">
+    <div class="container">
+        <div class="row g-4 pb-4 border-bottom border-secondary">
+            <div class="col-lg-4">
+                <div class="d-flex align-items-center gap-2 mb-2">
+                    <img src="slike/logo.svg" alt="Logo muzeja" width="32" height="32">
+                    <span class="fs-5">Muzej YU auta</span>
+                </div>
+                <p class="text-white-50 small">Digitalni/virtuelni muzej posvećen automobilskoj industriji SFRJ. Nekomercijalni studentski projekat u okviru predmeta Veb dizajn.</p>
+            </div>
+            <div class="col-6 col-lg-2">
+                <h6 class="text-uppercase small">Navigacija</h6>
+                <ul class="list-unstyled small">
+                    <li><a href="pocetna.html" class="link-light link-opacity-75 text-decoration-none">Početna</a></li>
+                    <li><a href="istorija.html" class="link-light link-opacity-75 text-decoration-none">Istorija</a></li>
+                    <li><a href="modeli.html" class="link-light link-opacity-75 text-decoration-none">Modeli</a></li>
+                    <li><a href="kontakt.html" class="link-light link-opacity-75 text-decoration-none">Kontakt</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-lg-2">
+                <h6 class="text-uppercase small">Marke</h6>
+                <ul class="list-unstyled small">
+                    <li><a href="#zastava" class="link-light link-opacity-75 text-decoration-none">Zastava</a></li>
+                    <li><a href="#reno" class="link-light link-opacity-75 text-decoration-none">Reno</a></li>
+                    <li><a href="#folksvagen" class="link-light link-opacity-75 text-decoration-none">Folksvagen</a></li>
+                    <li><a href="#sitroen" class="link-light link-opacity-75 text-decoration-none">Sitroen</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-4">
+                <h6 class="text-uppercase small">Kontakt</h6>
+                <ul class="list-unstyled small text-white-50">
+                    <li>Ulica Fabrička 1, Kragujevac</li>
+                    <li>info@muzej-yu-auta.rs</li>
+                    <li>+381 34 000 000</li>
+                </ul>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between flex-wrap small pt-3 text-white-50">
+            <span>© 2026 Muzej jugoslovenskog automobila — seminarski rad</span>
+            <span>Sve slike su samostalno izrađene ilustracije</span>
+        </div>
+    </div>
+</footer>
+
+<script src="biblioteke/bootstrap.bundle.min.js"></script>
+<script src="biblioteke/jquery.min.js"></script>
+<script src="js/skripta.js"></script>
+<script>
+    // Aktivira odgovarajući Bootstrap tab kada se na stranicu stigne sa #marka u adresi
+    (function () {
+        var hash = window.location.hash;
+        if (hash) {
+            var dugmeTaba = document.querySelector('#markeTabovi button[data-bs-target="' + hash + '"]');
+            if (dugmeTaba && window.bootstrap) {
+                new bootstrap.Tab(dugmeTaba).show();
+            }
+        }
+    })();
+</script>
+</body>
+</html>
